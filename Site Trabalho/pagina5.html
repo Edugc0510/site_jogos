@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Valorant</title>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <h1>Valorant</h1>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fluxo.html">Fluxograma</a></li>
+            <li><a href="pagina2.html">Counter-Strike: Global Offensive</a></li>
+            <li><a href="pagina3.html">GTA V</a></li>
+            <li><a href="pagina4.html">Minecraft</a></li>
+            <li><a href="pagina5.html">Valorant</a></li>
+        </ul>
+
+    </section>
+    <br><br>
+    
+    <div class="clock-container">
+        
+    </div>
+    
+    <script>
+    
+         const clockContainer = document.querySelector('.clock-container')
+    
+         const updateClock = () => {
+             const present =new Date()
+             const hours = present.getHours()
+             const minutes = present.getMinutes()
+             const seconds = present.getSeconds()
+    
+             const clockHTML = `
+             <span>${String(hours).length == 1 ? `0${hours}` : hours}</span> :
+             <span>${String(minutes).length == 1 ? `0${minutes}` : minutes}</span> :
+             <span>${String(seconds).length == 1 ? `0${seconds}` : seconds}</span> 
+             `
+    
+         
+             clockContainer.innerHTML = clockHTML  
+         }
+    
+         setInterval(updateClock, 1000)
+    
+    </script>
+    
+
+<center>
+<img class="valorant2" src="valorant2.jpg">
+<p>O jogo Valorant foi lançado em 2 de Junho de 2020, porém o beta aqui no Brasil iniciou em maio, ficando assim, com um mês de teste para correção de bugs.
+    Valorant pertence a empresa Riot Games, que é conhecida por um dos maiores jogos do mundo, o League of Legends.
+    Atualmente o Valorant é também, assim como o League of Legends, um dos jogos mais jogados do mundo, graças a grande fan base do LoL, o jogo já lançou tendo uma grande quantidade de jogadores.
+    O jogo consiste em um FPS (First Person Shooter), 5x5 e conta com vários diferenciais.
+    Um dos maiores diferenciais para o jogo é que ele possui diversas habilidades, que são conhecidos como "poderzinhos", que, na grande maioria dos FPS, não existe nada parecido, apenas são utilizados como "habilidades", as granadas, flashbangs, molotv's e smokes.
+    Também, diferente da grande maioria dos FPS, Valorant possui personagens, onde cada um possuí seu kit de habilidades, e história. Um dos personagens mais icônicos do jogo é a "Jett", que é uma menina originária da Coreia do Sul, suas grandes vantagens são suas habilidades, que permitem com que ela se mova mais rápido que a maioria dos personagens, além da movimentação como um grande forte deste personagem, ela também é o único personagem que consegue voar e planar no jogo, deixando ela com uma grande vantagem sobre os outros, se souber utilizá-la bem, é claro.
+    E como todo bom jogo de FPS, o mais novo jogo da Riot Games, também possui uma variedade de mapas. São eles, Breeze, Icebox, Bind, Haven, Ascent e Split. Cada um dos mapas possuem uma história e inspiração diferente, como a Bind, que se passa em um deserto no Oriente Médio.
+     Valorant é um jogo competitivo que possui sistema de ranqueadas, e campeonatos. Ele possuí 8 ranks, que são, ferro, bronze, prata, ouro, platina, diamante, imortal e por fim, o melhor, o radiante.
+    Diversos campeonatos já entraram para o histórico do jogo, o maior que já teve, foi o VALORANT Masters Reykjavik, em que a equipe Sentinels se consagrou campeã mundial. Dois times brasileiros também participaram deste campeonato a Vikings (VKS) e a Sharks (SHK), ambos não conseguiram bons resultados.</p>
+</center>
+
+
+
+
+
+        <footer class="footer">
+        
+            <div class="footer-col">
+                <h4>Informações</h4>
+                    <p id="baixo">Trabalho realizado por Marcéu Araújo Signori, cursando o segundo ano do ensino médio no SENAI (2021).</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4 id="publi">Contato</h4>
+                <div class="social-links">
+                    <ul id="links">
+                    <a href="https://www.instagram.com/marceu.as/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/marcéu-signori-18020321b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </ul>
+                </div>
+            </div>
+          </footer>
+</body>
+</html>

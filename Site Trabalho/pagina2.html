@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>GTA</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu">
+            <ul>
+                <h1>Counter-Strike: Global Offensive</h1>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fluxo.html">Fluxograma</a></li>
+                <li><a href="pagina2.html">Counter-Strike: Global Offensive</a></li>
+                <li><a href="pagina3.html">GTA V</a></li>
+                <li><a href="pagina4.html">Minecraft</a></li>
+                <li><a href="pagina5.html">Valorant</a></li>
+            </ul>
+
+        </section>
+        <br><br>
+        
+        <div class="clock-container">
+        
+        </div>
+        
+        <script>
+        
+             const clockContainer = document.querySelector('.clock-container')
+        
+             const updateClock = () => {
+                 const present =new Date()
+                 const hours = present.getHours()
+                 const minutes = present.getMinutes()
+                 const seconds = present.getSeconds()
+        
+                 const clockHTML = `
+                 <span>${String(hours).length == 1 ? `0${hours}` : hours}</span> :
+                 <span>${String(minutes).length == 1 ? `0${minutes}` : minutes}</span> :
+                 <span>${String(seconds).length == 1 ? `0${seconds}` : seconds}</span> 
+                 `
+        
+             
+                 clockContainer.innerHTML = clockHTML  
+             }
+        
+             setInterval(updateClock, 1000)
+        
+        </script>
+        
+
+<section>
+    <center>
+    <img class="csgo2" src="csgo2.jpg">
+<p>Counter-Strike: Global Offensive é um clássico jogo de FPS (tiro em primeira pessoa) no qual o se tem um objetivo especifico dependendo da sua equipe, temos a terrorista, cujo o objetivo é finalizar todos os contra terroristas ou fazer com que a c4 (bomba) exploda e a equipe contra terrorista, que tem o objetivo de matar todos os terroristas ou desarmar a bomba antes da mesma explodir, as partidas são de no máximo 90 minutos cada, é melhor de 30, ou seja, quem fizer 16 primeiro, vence.
+    Existem vários mapas para se jogar, e mudando o mapa se mudam as táticas e estratégias, pois o jogo é muito mais complexo do que só andar e atirar, existem inúmeros locais que os adversários podem estar, esses locais são chamados de “pixels”, e várias armas para usar, cada arma tem um preço, conforme você ganha ou perde uma rodada você ganha uma quantia. Para se dar bem nesse jogo você precisa ter paciência, pois é muito difícil no começo, até aprender sobre a economia dele, estratégias, locais onde se vara tiro e muitas outras coisas. 
+    </p><br><br>
+    </center>
+</section>
+        <footer class="footer">
+        
+            <div class="footer-col">
+                <h4>Informações</h4>
+                    <p id="baixo">Trabalho realizado por Eduardo gabriel Christmann Groscko, cursando o segundo ano do ensino médio no SENAI (2021).</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4 id="publi">Contato</h4>
+                <div class="social-links">
+                    <ul id="links">
+                    <a href="https://www.instagram.com/edugc0510/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/eduardo-christmann/?originalSubdomain=br" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </ul>
+                </div>
+            </div>
+          </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Minecraft</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu">
+            <ul>
+                <h1>Minecraft</h1>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fluxo.html">Fluxograma</a></li>
+                <li><a href="pagina2.html">Counter-Strike: Global Offensive</a></li>
+                <li><a href="pagina3.html">GTA V</a></li>
+                <li><a href="pagina4.html">Minecraft</a></li>
+                <li><a href="pagina5.html">Valorant</a></li>
+            </ul>
+        </section>
+        <br><br>
+        
+        <div class="clock-container">
+        
+        </div>
+        
+        <script>
+        
+             const clockContainer = document.querySelector('.clock-container')
+        
+             const updateClock = () => {
+                 const present =new Date()
+                 const hours = present.getHours()
+                 const minutes = present.getMinutes()
+                 const seconds = present.getSeconds()
+        
+                 const clockHTML = `
+                 <span>${String(hours).length == 1 ? `0${hours}` : hours}</span> :
+                 <span>${String(minutes).length == 1 ? `0${minutes}` : minutes}</span> :
+                 <span>${String(seconds).length == 1 ? `0${seconds}` : seconds}</span> 
+                 `
+        
+             
+                 clockContainer.innerHTML = clockHTML  
+             }
+        
+             setInterval(updateClock, 1000)
+        
+        </script>
+        
+<center>
+<img src="minecraft2.jpg">
+<p>O jogo Minecraft que tomou o coração de milhões de pessoas ao redor do mundo, um jogo de sobrevivência em um mundo feito de cubos.
+    Sua idealização e começo de produção foi do sueco Markus Persson mais conhecido como “Notch”. Começou sendo apenas um projeto pequeno, e em 2009 foi a público, a versão era muito simples e hoje em dia é conhecida como versão “classic”, nessa época o jogo ainda não era de sobrevivência mas já conseguia interagir com alguns dos blocos disponíveis, nessa época era possível jogar o jogo de graça ,mas também era possível comprar uma versão do jogo que possibilitava receber atualizações futuras sem ter que pagar mais nada, e nessa época surgiu o conceito de “early access” que consiste em comprar um jogo na fase de desenvolvimento para ir jogando e recebendo as atualizações.
+    no final de 2011 após diversas atualizações o jogo foi finalmente lançado oficialmente para PC, essa foi a primeira versão que trouxe um final pro game, que era derrotar um dragão que habitava uma dimensão paralela chamado de “Ender Dragon”. Em 2012 o jogo teve o lançamento da sua primeira versão de console que foi para o Xbox 360 e sua versão de celular. Posteriormente em 2014 a empresa que o Notch havia criado junto com suas produções foram vendidas para a Microsoft , fazendo com que Notch se afastasse da produção do jogo.
+    O Minecraft recebe atualizações até os dias de hoje, isso é um dos maiores motivos para a comunidade desse jogo ser tão grande, além dos “mods” que são conteúdos extras que a comunidade cria para deixar o jogo com itens, animais, ambientações tudo a mais do que há no jogo oficial fazendo com que sempre tenham coisas novas para explorar.</p>
+</center>
+        <footer class="footer">
+        
+            <div class="footer-col">
+                <h4>Informações</h4>
+                    <p id="baixo">Trabalho realizado por Guilherme Matos, cursando o segundo ano do ensino médio no SENAI (2021).</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4 id="publi">Contato</h4>
+                <div class="social-links">
+                    <ul id="links">
+                    <a href="https://www.instagram.com/m4tos._/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/guilherme-matos26/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </ul>
+                </div>
+            </div>
+          </footer>
+</body>
+</html>
